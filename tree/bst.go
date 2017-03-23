@@ -1,9 +1,8 @@
-// tree provides implement of binary search trees
+// tree provides an implement of binary search trees
 package tree
 
 import (
 	"fmt"
-	"strings"
 )
 
 // 树中每一个节点包含的属性
@@ -137,7 +136,7 @@ func (b *Bst) tree_insert(tree *Node, element interface{}) *Node {
 		}
 	}
 
-	var node *Node = &Node{element, nil, nil}
+	var node *Node = &Node{element, nil, nil, nil}
 	node.parent = y
 
 	// 说明是一颗空二叉搜索树
